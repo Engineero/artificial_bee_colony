@@ -98,7 +98,7 @@ class Colony:
     def _draw_params(self):
         """ Makes a random draw of parameters. """
         draw = {}
-        for k, v in params.items():
+        for k, v in self.params.items():
             if isinstance(v, tuple):
                 draw[k] = uniform(*v)  # uniform for ranges
             elif callable(v):
